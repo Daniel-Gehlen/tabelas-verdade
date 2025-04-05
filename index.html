@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada Lógica - Memorizador de Tabelas-Verdade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tabuada Lógica</h1>
+            <p>Memorize as tabelas-verdade dos principais operadores lógicos</p>
+        </header>
+
+        <main>
+            <section class="controls">
+                <button id="show-all-btn">Mostrar Todas Tabelas</button>
+                <button id="practice-btn">Modo Prática</button>
+                <button id="quiz-btn">Teste Rápido</button>
+            </section>
+
+            <section class="tables-section">
+                <!-- Tabelas serão geradas dinamicamente via JavaScript -->
+            </section>
+
+            <section class="practice-section hidden">
+                <div class="exercise">
+                    <h3>Complete a Tabela-Verdade</h3>
+                    <div class="exercise-table"></div>
+                    <button id="check-answer">Verificar Resposta</button>
+                    <div class="feedback"></div>
+                </div>
+            </section>
+
+            <section class="quiz-section hidden">
+                <div class="quiz-question">
+                    <h3>Qual o resultado de p → q quando p=V e q=F?</h3>
+                    <div class="quiz-options">
+                        <button class="quiz-option">V</button>
+                        <button class="quiz-option">F</button>
+                    </div>
+                    <div class="quiz-feedback"></div>
+                    <div class="quiz-score">Acertos: 0/0</div>
+                </div>
+            </section>
+
+            <section class="memory-tips">
+                <h2>Macetes para Memorização</h2>
+                <div class="tips-container">
+                    <div class="tip-card">
+                        <h3>Negação (¬)</h3>
+                        <p>"Inverte o valor" - o que é V vira F e vice-versa</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Conjunção (∧)</h3>
+                        <p>"E exige perfeição" - só é V quando ambos são V</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Disjunção (∨)</h3>
+                        <p>"OU é inclusivo" - só é F quando ambos são F</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Condicional (→)</h3>
+                        <p>"Vera Fischer é Falsa" - só é F quando V→F</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>Bicondicional (↔)</h3>
+                        <p>"Gosta de iguais" - só é V quando ambos valores são iguais</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
